@@ -2,10 +2,17 @@
   padding: 25px 0 23px;
   border-bottom: 1px solid $color-gainsboro;
 
+  @include vp-1023  {
+    padding: 18px 0 15px;
+  }
+
   &__content {
     position: relative;
     display: flex;
     justify-content: center;
+
+
+   
   }
 
   &__menu {
@@ -20,6 +27,27 @@
     border: none;
     transform: translateY(-50%);
     cursor: pointer;
+
+    @include vp-1023  {
+      
+      margin: 0 0 0 72px;
+      left: unset;
+      right: 0;
+    }
+  }
+
+  &__menu-icon  {
+    @include vp-1023  {
+      width: 52px;
+      height: 20px;
+    }
+  }
+
+  &__logo {
+    @include vp-1023  {
+      width: 105px;
+      height: 24px;
+    }
   }
 
   &__logo-link {
