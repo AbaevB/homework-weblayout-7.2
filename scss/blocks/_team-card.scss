@@ -52,6 +52,10 @@
 
   &--center &__quote {
     text-align: center;
+
+    @include vp-1023  {
+      text-align: left;
+    }
   }
 
   &__quote-text {
@@ -64,10 +68,18 @@
     font-size: 14px;
     line-height: 18px;
     text-align: right;
+
+    @include vp-1023  {
+      max-width: 300px;
+    }
   }
 
   &--center &__description {
     text-align: center;
+
+    @include vp-1023  {
+      text-align: right;
+    }
   }
 
   &__links {
