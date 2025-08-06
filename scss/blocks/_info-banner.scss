@@ -4,9 +4,23 @@
   align-items: center;
   margin: 0 0 120px 0;
   padding: 85px 90px;
-  background: $color-very-light-grey url("../../images/banner.jpg") no-repeat;
+  background: $color-very-light-grey url("../../images/banner.jpg") cover no-repeat;
   background-size: cover;
   border-radius: 0 60px 0 60px;
+
+  @media (min-resolution: 2dppx) {
+    background: $color-very-light-grey url("../../images/banner@2x.jpg") cover no-repeat;
+  }
+
+  @include vp-1023{
+    background: $color-very-light-grey url("../../images/banner-tablet.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width: 1023px) and (min-resolution: 2dppx) {
+    background: $color-very-light-grey url("../../images/banner-tablet@2x.jpg");
+    background-size: cover;
+  }
 
   &__title {
     margin: 0 40px 0 0;
