@@ -21,9 +21,14 @@
     background-size: cover;
   }
 
+
   @media (max-width: 1023px) and (min-resolution: 2dppx) {
     background: $color-very-light-grey url("../../images/banner-tablet@2x.jpg");
     background-size: cover;
+  }
+
+  @include vp-767 {
+    padding: 40px 15px;
   }
 
   &__title {
@@ -39,6 +44,12 @@
       margin: 0 0 20px;
       font-size: 36px;
       line-height: 40px;
+    }
+
+    @include vp-767 {
+      margin: 0 0 15px;
+      font-size: 24px;
+      line-height: 26px;
     }
   }
 
@@ -64,6 +75,13 @@
     @include vp-1023  {
       margin: 0 0 20px;
       text-align: center;
+
+    }
+
+    @include vp-767 {
+      margin: 0 0 15px;
+      font-size: 14px;
+      line-height: 18px;
     }
   }
 
@@ -81,6 +99,13 @@
 
     @include vp-1023  {
       margin: 0 auto;
+    }
+
+    @include vp-767 {
+      padding: 9px;
+      width: 160px;
+      font-size: 12px;
+      line-height: 14px;
     }
   }
 }
