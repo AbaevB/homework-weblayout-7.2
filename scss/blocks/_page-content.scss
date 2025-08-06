@@ -9,6 +9,14 @@
     line-height: 60px;
     text-align: center;
     text-transform: uppercase;
+
+    @include vp-1023  {
+      max-width: 620px;
+      margin: 0 auto 40px;
+      font-size: 48px;
+      line-height: 52px;
+      
+    }
   }
 
   &__title--h2 {
