@@ -4,12 +4,12 @@
   align-items: center;
   margin: 0 0 120px 0;
   padding: 85px 90px;
-  background: $color-very-light-grey url("../../images/banner.jpg") cover no-repeat;
+  background: $color-very-light-grey url("../../images/banner.jpg")  no-repeat;
   background-size: cover;
   border-radius: 0 60px 0 60px;
 
   @media (min-resolution: 2dppx) {
-    background: $color-very-light-grey url("../../images/banner@2x.jpg") cover no-repeat;
+    background: $color-very-light-grey url("../../images/banner@2x.jpg")  no-repeat;
   }
 
   @include vp-1023{

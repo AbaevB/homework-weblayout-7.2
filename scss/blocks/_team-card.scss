@@ -68,6 +68,11 @@
   &__inner {
     display: flex;
     flex-direction: column;
+
+    @include vp-767 {
+      align-items: flex-end;
+      min-height: 219px;
+    }
   }
 
   &__quote {
@@ -110,6 +115,7 @@
       max-width: 240px;
       font-size: 12px;
       line-height: 14px;
+      text-align: right;
     }
   }
 
