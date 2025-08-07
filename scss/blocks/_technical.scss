@@ -1,1 +1,39 @@
- 
+ .technical {
+    height: 100vh;
+   
+    &__inner    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 800px;
+        height: 100%;
+        padding-top: 195px;
+    }
+
+    &__text {
+        display: block;
+        margin: 0 0 30px;
+        font-weight: 200;
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+        color: $color-black;
+    }
+
+    &__info {
+        display: block;
+        margin: 0 0 60px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: $color-blue-charcoa;
+    }
+
+    &__socials  {
+        margin: 0 auto;
+    }
+
+ }
