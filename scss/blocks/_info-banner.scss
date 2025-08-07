@@ -28,7 +28,15 @@
   }
 
   @include vp-767 {
+    margin: 0 0 60px;
     padding: 40px 15px;
+    background: $color-very-light-grey url("../../images/banner-mobile.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width: $vp-mobile) and (min-resolution: 2dppx)  {
+    background: $color-very-light-grey url("../../images/banner-mobile@2x.jpg") no-repeat;
+    background-size: cover;
   }
 
   &__title {
